@@ -41,5 +41,7 @@ It safely interprets lists or tuples, supports nested structures, filters invali
 
 ---
 ## Run the Script
-- Python script.py test_input.txt
+```
+Python script.py test_input.txt
+```
 
