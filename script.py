@@ -75,13 +75,13 @@ def main(input_file):
                 sequence = ast.literal_eval(line) # Reference: https://stackoverflow.com/questions/15197673/using-pythons-eval-vs-ast-literal-eval
                 print(sequence)
                 result = calculate_mean(sequence)
-                print(result)
+                print(f"Mean Value for the above sequence: {result}")
             except Exception as e:
                 print(f"Error parsing line: {line!r} → {e}", file=sys.stderr) # unterminated string literal (detected at line {No.}) (<unknown>, line {No.})
 
 
 if __name__ == "__main__":
-    # Example usage: python mean_parser.py input.txt
+    # Example usage: python script.py test_input.txt
     if len(sys.argv) != 2:
         print("Usage on command prompt:  python script.py <input_file>")
         sys.exit(1)
